@@ -1,6 +1,4 @@
-from Data import *
 class Airplane:
-    data = Data()
     # Class attribute to keep track of the count
     count = 0
 
@@ -19,12 +17,20 @@ class Airplane:
     def __str__(self):
         return f"Number: {self.number}\nAirline: {self.airline}\nName: {self.name}\nTime: {self.time}\nPrice: {self.price}THB\n"
 
-    def airlines_answer(self, date):
-        print(f"Choose the airlines available on date: {date}")
-        for i in self.data.listplane:
+    def airlines_answer(self, date, data):
+        print(f"The number of airlines available on date: {date}")
+        for i in data:
             print(i)
+        airline = int(input("Choose the number of airline: "))
+        print("Your airline is")
+        # print(data[airline])
+        if airline :
+            print(data[airline])
+        
 
 class Airplane2(Airplane):
     def __init__(self):
         pass
+
+   
           

@@ -12,5 +12,5 @@ class Data:
     airplane3 = Airplane("Lion Air", "LD1550", "9:00 PM", 2000)
 
     # list to store object of airplanee
-    listplane = [airplane1, airplane2, airplane3]
+    listplane = ["",airplane1, airplane2, airplane3]
     
