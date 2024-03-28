@@ -1,19 +1,20 @@
-from Airplane import *
+from Airplane import Airplane2
 from Airport import *
+# from Data import *
 
-airplane1 = Airplane("Air Asia", "FD3114", "8:00 AM", 1520)
-airplane2 = Airplane("Vietjet", "VD2554", "1:00 PM", 1340)
-airplane3 = Airplane("Lion Air", "LD1550", "9:00 PM", 2000)
+# data = Data()
 
-
-listplane = [airplane1, airplane2, airplane3]
-
+# Airport
 airp1 = Airport()
 airp1.start()
 
-print(f"This is the available airlines on date: {airp1.date}")
-for i in listplane:
-    print(i)
+# Airplane
+airplanefunction = Airplane2()
+
+# print(f"Choose the airlines available on date: {airp1.date}")
+airplanefunction.airlines_answer(airp1.date)
+# for i in data.listplane:
+#     print(i)
 
 
 
